@@ -97,3 +97,19 @@ Route::get('eloquent2',function(){
     $mahasiswa = Mahasiswa::where('nama','=','Mamat Karbit')->get();
     return view('eloquent2',compact('mahasiswa'));
 });
+
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('beranda',function(){
+    return view('beranda');
+});
+
+Route::get('tentang',function(){
+    return view('tentang');
+});
+Route::get('kontak',function(){
+    return view('kontak');
+});
+Route::resource('dosen','DosenController');

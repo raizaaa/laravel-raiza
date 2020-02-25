@@ -1,3 +1,7 @@
+
+
+@extends('layouts.template')
+@section('konten')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,3 +30,4 @@
     @endforeach
 </body>
 </html>
+@endsection
