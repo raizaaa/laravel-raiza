@@ -1,5 +1,3 @@
-
-
 @extends('layouts.template')
 @section('konten')
 <!DOCTYPE html>
