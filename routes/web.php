@@ -112,4 +112,14 @@ Route::get('tentang',function(){
 Route::get('kontak',function(){
     return view('kontak');
 });
+
+
+// get = menampung/mengambil 1 method
+// resource = menampung 7 method bawaan yang ada dalam controller
 Route::resource('dosen','DosenController');
+
+Route::resource('hobi','HobiController');
+
+Route::resource('mahasiswa','MahasiswaController');
+
+Route::resource('wali','WaliController');

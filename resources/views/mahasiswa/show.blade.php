@@ -5,16 +5,20 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">
-                    Tambah Data Dosen
+                    Tambah Data mahasiswa
                 </div>
                 <div class="card-body">
                         <div class="form-group">
-                            <label for="">Nama Dosen</label>
-                            <input type="text" name="nama" class="form-control" value="{{$dosen->nama}}" readonly>
+                            <label for="">Nama mahasiswa</label>
+                            <input type="text" name="nama" class="form-control" value="{{$mahasiswa->nama}}" readonly>
                         </div>
                         <div class="form-group">
-                            <label for="">Nomor Induk Pegawai Dosen</label>
-                            <input type="text" name="nipd" class="form-control" value="{{$dosen->nipd}}" readonly>  
+                            <label for="">NIM</label>
+                            <input type="text" name="nim" class="form-control" value="{{$mahasiswa->nim}}" readonly>  
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nama Dosen</label>
+                            <input type="text" name="{{$mahasiswa->dosen->id}}" class="form-control" value="{{$mahasiswa->dosen->nama}}" readonly>  
                         </div>
                         <div class="form-group">
                             <a href="{{url()->previous()}}" class="btn btn-outline-primary btn-lg btn-block">Kembali</a>
